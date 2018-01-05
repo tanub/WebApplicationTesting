@@ -1,0 +1,50 @@
+package com.Links;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+public class NewTours_LinksValidation
+{
+	FirefoxDriver driver;
+	@BeforeTest
+	public void setUp()
+	{
+		driver = new FirefoxDriver();
+		driver.get("http://newtours.demoaut.com/");
+	}
+	@Test
+	public void ValidatingLinks() throws InterruptedException
+	{
+		List<WebElement> Links = driver.findElements(By.tagName("a"));
+		for (int i=0;i<Links.size();i++)
+		{
+			String ExpectedURL = Links.get(i).getAttribute("herf");
+			System.out.println(ExpectedURL);
+			Links.get(i).click();
+			Thread.sleep(5000);
+			String ActualURL = driver.getCurrentUrl();
+			System.out.println(ActualURL);
+			if (ActualURL.equals(ExpectedURL))
+				System.out.println("Reached to the Expected URL --Pass");
+			
+			else
+				System.out.println("Reached to an unexpected URL -- FAIL");
+			driver.navigate().back();
+			Links = driver.findElements(By.tagName("a"));
+		}
+		
+		
+	}
+	@AfterTest
+	public void tearDown()
+	{
+		driver.close();
+	
+	}
+}

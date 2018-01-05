@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [GRID Testing]">
+  <parameter name="browser" value="edge"/>
+  <test name="On edge(failed)">
+    <parameter name="browser" value="edge"/>
+    <classes>
+      <class name="com.Grid.FacebookEdgeTest">
+        <methods>
+          <include name="FacebookEdge" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.Grid.FacebookEdgeTest -->
+    </classes>
+  </test> <!-- On edge(failed) -->
+</suite> <!-- Failed suite [GRID Testing] -->

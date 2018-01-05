@@ -1,0 +1,28 @@
+#Name locator for firstname element
+FirstName = firstName
+#Name locator for lastname element
+LastName = lastName
+#Name locator for phone element
+Phone = phone
+#Name locator for username element
+UserName = userName
+#Name element for address element
+Address = address1
+#Name locator for city element
+City = city
+#Name locator for state element
+State = state
+#Name locator for postalcode element
+PostalCode = postalCode
+#Name locator for country element
+Country = country
+#Name locator for email element
+Email = email
+#Name locator for password element
+Password = password
+#Name locator for confirm password element
+ConfirmPassword = confirmPassword
+#Name locator for register element
+Register = register
+#Xpath locator for usernameverify element
+UserNameVerify = html/body/div[1]/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[3]/td/p[3]/a/font/b

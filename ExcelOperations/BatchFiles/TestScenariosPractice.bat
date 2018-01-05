@@ -1,0 +1,1 @@
+java -cp "C:\Users\guru\Eclipse_Tanuja_workspace\ExcelOperations\Library/*";"C:\Users\guru\Eclipse_Tanuja_workspace\ExcelOperations\bin" org.testng.TestNG "C:\Users\guru\Eclipse_Tanuja_workspace\ExcelOperations\TestScenarios.xml"

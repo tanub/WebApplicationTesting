@@ -1,0 +1,33 @@
+package com.Links;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+public class NewTours_TotalLinks 
+{
+	FirefoxDriver driver;
+	@BeforeTest
+	public void setUp()
+	{
+		driver = new FirefoxDriver();
+		driver.get("http://newtours.demoaut.com");
+	}
+	@Test
+	public void TotalLinks()
+	{
+		List<WebElement> TotalLinks = driver.findElements(By.tagName("a"));
+		System.out.println(TotalLinks.size());
+	}
+	@AfterTest
+	public void tearDown()
+	{
+		driver.close();
+	}
+	}
+

@@ -1,0 +1,56 @@
+package com.linkstitles;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.server.browserlaunchers.Sleeper;
+
+public class TSRTCLinks {
+
+	public static void main(String[] args)
+	{
+		FirefoxDriver driver = new FirefoxDriver();		
+		
+		driver.get("http://www.tsrtconline.in/oprs-web");
+		
+		WebElement Menu = driver.findElement(By.className("menu-wrap"));
+		
+		List<WebElement> MenuLinks = Menu.findElements(By.tagName("a"));
+		
+		System.out.println(MenuLinks.size());
+		
+		for (int i=0;i<MenuLinks.size();i++)
+		{
+			String ExpectedURL = MenuLinks.get(i).getAttribute("href");
+			MenuLinks.get(i).click();
+			Sleeper.sleepTightInSeconds(5);
+			System.out.println(driver.getTitle());
+			
+			String ActualURL = driver.getCurrentUrl();
+			if(ActualURL.equals(ExpectedURL))
+			{
+				System.out.println("Page navigated to the expected URL ");
+			}
+			
+			else
+			{
+				System.out.println("Page navigated to the unexpected URL");
+			}
+		
+			driver.navigate().back();
+			
+			Sleeper.sleepTightInSeconds(5);
+		
+		 	Menu = driver.findElement(By.className("menu-wrap"));
+			
+			MenuLinks = Menu.findElements(By.tagName("a"));
+		
+		
+		
+		}
+
+	}
+
+}

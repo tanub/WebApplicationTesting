@@ -1,0 +1,42 @@
+package com.HomePage;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.Select;
+
+public class ClickNavigationForwardBackward {
+
+	public static void main(String[] args) 
+	{
+
+		FirefoxDriver driver = new FirefoxDriver();
+		driver.get("https://www.makemytrip.com");
+		
+		List<WebElement> Links = driver.findElements(By.tagName("a"));
+		System.out.println(Links.size());//642
+		
+		driver.findElement(By.xpath("//label[@for='switch__input_3']")).click();
+		driver.findElement(By.cssSelector("input[id='hp-widget__sfrom']")).click();
+		String Opt = "Mumbai, India";
+		
+		//driver.findElement(By.id("hp-widget__sfrom")).clear();
+		WebElement From = driver.findElement(By.id("hp-widget__sfrom"));
+		
+		List<WebElement> Values =From.findElements(By.tagName("li"));
+		for(WebElement Option : Values)
+		{
+			if(Option.getText().equals(Opt))
+			{
+				Option.click();
+				break;
+			}
+		}
+	
+		
+
+	}
+
+}

@@ -1,0 +1,64 @@
+package com.ExcelOperations;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.util.List;
+
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class A_NewTours_Country_Excel {
+
+	public static void main(String[] args) throws IOException {
+		
+		
+		FileInputStream file = new FileInputStream("C:\\Users\\guru\\Desktop\\Selenium_apache\\NewTours_Country.xlsx");
+		
+		XSSFWorkbook workbook = new XSSFWorkbook(file);
+		
+		XSSFSheet sheet = workbook.getSheet("Sheet1");
+		
+		Row r = sheet.createRow(0);
+		
+		Cell c = r.createCell(0);
+				
+				FirefoxDriver driver = new FirefoxDriver();
+				
+				driver.get("http://newtours.demoaut.com/mercurywelcome.php");
+				
+				driver.findElement(By.linkText("REGISTER")).click();
+				
+				WebElement Country = driver.findElement(By.xpath("//select[@name='country']"));
+				
+				Country.click();
+				
+				List<WebElement> Value1= Country.findElements(By.tagName("option"));
+				
+				System.out.println(Value1.size());
+				
+				for (int i=0;i<Value1.size();i++)
+				
+				{
+					
+					 r = sheet.createRow(i);
+					System.out.println(i+"."+Value1.get(i).getText());
+				
+				
+				c.setCellValue(Value1.get(i).getText());
+				FileOutputStream file2 = new FileOutputStream("C:\\Users\\guru\\Desktop\\Selenium_apache\\NewTours_Country.xlsx");
+				
+				workbook.write(file2);
+				
+				
+				
+				}
+				
+	}}
+

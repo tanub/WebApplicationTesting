@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="38" started-at="2017-12-13T00:38:16Z" finished-at="2017-12-13T00:38:16Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="38" started-at="2017-12-13T00:38:16Z" finished-at="2017-12-13T00:38:16Z">
+      <class name="com.TestNgAnnotations.Annotations2">
+        <test-method status="PASS" signature="BrowserLaunchAndLogIn()[pri:0, instance:com.TestNgAnnotations.Annotations2@4439f31e]" name="BrowserLaunchAndLogIn" is-config="true" duration-ms="8" started-at="2017-12-13T11:38:16Z" finished-at="2017-12-13T11:38:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserLaunchAndLogIn -->
+        <test-method status="PASS" signature="Compose()[pri:0, instance:com.TestNgAnnotations.Annotations2@4439f31e]" name="Compose" duration-ms="5" started-at="2017-12-13T11:38:16Z" finished-at="2017-12-13T11:38:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Compose -->
+        <test-method status="PASS" signature="InBox()[pri:1, instance:com.TestNgAnnotations.Annotations2@4439f31e]" name="InBox" duration-ms="2" started-at="2017-12-13T11:38:16Z" finished-at="2017-12-13T11:38:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InBox -->
+        <test-method status="PASS" signature="ApplicationClose()[pri:0, instance:com.TestNgAnnotations.Annotations2@4439f31e]" name="ApplicationClose" is-config="true" duration-ms="0" started-at="2017-12-13T11:38:16Z" finished-at="2017-12-13T11:38:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ApplicationClose -->
+      </class> <!-- com.TestNgAnnotations.Annotations2 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

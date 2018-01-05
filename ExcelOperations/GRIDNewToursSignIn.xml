@@ -1,0 +1,19 @@
+<suite name="GRID Testing NewTours SignIn">
+ 	
+
+ <test name = "On firefox">
+  <parameter name="Browser" value="firefox"/>
+   <classes>
+    <class name ="com.Grid.GRIDNewToursSignIn"/>
+   </classes>
+ </test>
+ 
+ <test name = "On edge">
+  <parameter name ="Browser" value="edge"/>
+   <classes>
+     <class name = "com.Grid.GRIDNewToursSignIn"/>
+   </classes>
+  </test>
+
+</suite>
+  		

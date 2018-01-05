@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [GRID Testing NewTours SignIn]">
+  <parameter name="Browser" value="edge"/>
+  <test name="On edge(failed)">
+    <parameter name="Browser" value="edge"/>
+    <classes>
+      <class name="com.Grid.GRIDNewToursSignIn">
+        <methods>
+          <include name="NewToursSignIn" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.Grid.GRIDNewToursSignIn -->
+    </classes>
+  </test> <!-- On edge(failed) -->
+</suite> <!-- Failed suite [GRID Testing NewTours SignIn] -->

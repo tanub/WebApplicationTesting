@@ -1,0 +1,26 @@
+package com.TestNgAnnotations;
+
+import org.testng.annotations.Test;
+
+public class Annotations1 
+{
+
+	@Test
+	public void BrowserLaunch()
+	{
+		System.out.println("This will launch the Browser");
+	}
+	
+	@Test
+	public void InBox()
+	{
+		System.out.println("Testing INBox Functionality");
+	}
+	
+	@Test
+	public void Compose()
+	{
+		System.out.println("Testing Compose Mail Fuctionality");
+	}
+	
+}

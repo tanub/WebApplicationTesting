@@ -1,0 +1,7 @@
+Feature: NewTours Application Home Page
+Scenario: NewTours Application Login Functionality
+
+Given: Open the browser and navigate to NewTours application
+When: User enters valid Username and password and click Sign-in button
+Then: User should be logged into the application successfully and should be able to sign-off
+Then: User should close the browser

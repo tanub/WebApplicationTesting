@@ -1,0 +1,19 @@
+<suite name = "TestNG NewTours Serial Testing">
+	<test name = "Keyword driven NewTours Login Test">
+		<classes>
+			<class name = "com.KeyWord.NewToursLogInTest"/>
+		</classes>
+	</test>
+	
+	<test name = "Datadriven NewTours User Registration Testing">
+		<classes>
+			<class name = "com.DataDrivenTesting.NewUserRegistration"/>
+		</classes>
+	</test>
+	
+	<test name = "POM NewTours Home page testing">
+		<classes>
+			<class name = "com.POM.NewToursHomePageTesting"/>
+		</classes>
+	</test>
+</suite>	

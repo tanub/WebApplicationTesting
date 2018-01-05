@@ -1,0 +1,7 @@
+<suite name = "Testing diff Frameworks using TestNG">
+	<test name = "Keyword driven Testing">
+		<classes>
+			<class name = "com.KeyWord.NewToursLogInTest"/>
+		</classes>
+	</test>
+</suite>			

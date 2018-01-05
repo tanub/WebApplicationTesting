@@ -1,0 +1,16 @@
+<suite name = "GRID Testing">
+ <test name = "On firefox">
+  <parameter name ="browser" value="firefox"/>
+    <classes>
+      <class name="com.Grid.FacebookEdgeTest"/>
+    </classes>
+ </test>
+
+ <test name="On edge">
+  <parameter name="browser" value="edge"/>
+    <classes>
+      <class name="com.Grid.FacebookEdgeTest"/>
+    </classes>
+ </test>
+</suite>    
+			

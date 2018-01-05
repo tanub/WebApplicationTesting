@@ -1,0 +1,19 @@
+<suite name = "TestNG NewTours parallel testing" parallel = "tests">
+	<test name = "keyword driven NewTours User login">
+		<classes>
+			<class name ="com.KeyWord.NewToursLogInTest"/>
+		</classes>
+	</test>
+	
+	<test name = "Datadriven NewTours Userregistration">
+		<classes>
+			<class name = "com.DataDrivenTesting.NewUserRegistration"/>
+		</classes>
+	</test>
+		
+	<test name ="POM New Tours Homepage">
+		<classes>
+			<class name = "com.POM.NewToursHomePageTesting"/>
+		</classes>
+	</test>
+</suite>

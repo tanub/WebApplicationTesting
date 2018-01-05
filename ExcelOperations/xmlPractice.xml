@@ -1,0 +1,19 @@
+<suite name="xmlTesting">
+	<test name="keyword driven NewTours SignIn">
+		<classes>
+			<class name="com.KeyWord.NewToursLogInTest"/>
+		</classes>
+	</test>
+	
+	<test name="Datadriver NewTours User registration">
+		<classes>
+			<class name="com.DataDrivenTesting.NewUserRegistration"/>
+		</classes>
+	</test>
+	
+	<test name="POM NewTours HomePage">
+		<classes>
+			<class name="com.POM.NewToursHomePageTesting"/>
+		</classes>
+	</test>
+</suite>				

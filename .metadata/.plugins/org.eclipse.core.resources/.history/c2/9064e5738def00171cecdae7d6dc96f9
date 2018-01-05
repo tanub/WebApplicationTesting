@@ -1,0 +1,15 @@
+package com.HomePage;
+
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class ClickNavigationForwardBackward {
+
+	public static void main(String[] args) 
+	{
+
+		FirefoxDriver driver = new FirefoxDriver();
+		driver.get("https://www.makemytrip.com");
+
+	}
+
+}

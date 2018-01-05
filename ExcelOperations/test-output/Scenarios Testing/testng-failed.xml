@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Scenarios Testing]" parallel="tests">
+  <test name="DataDriven Testing(failed)" parallel="tests">
+    <classes>
+      <class name="com.DataDrivenTesting.NewUserRegistration">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="NewUser"/>
+        </methods>
+      </class> <!-- com.DataDrivenTesting.NewUserRegistration -->
+      <class name="com.KeyWord.NewToursLogInTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.KeyWord.NewToursLogInTest -->
+    </classes>
+  </test> <!-- DataDriven Testing(failed) -->
+</suite> <!-- Failed suite [Scenarios Testing] -->

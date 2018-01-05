@@ -1,0 +1,7 @@
+<suite name="Scenarios Testing">
+  <test name="NewToursUserReg">
+    <classes>
+      <class name="com.UserRegistration.NewUserRegistration"/>
+    </classes>
+  </test> <!-- Default test -->
+</suite> <!-- Default suite -->
